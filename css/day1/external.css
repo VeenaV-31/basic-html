@@ -1,0 +1,25 @@
+h1.tomato{
+    background-color:tomato;
+    text-align: center;/*set text alignment to center */
+}
+h1.orange{
+    background-color:orange;
+}
+h1.dodgerblue{
+   background-color:dodgerblue;
+}
+h1.gray{
+    background-color:gray;
+}
+h1.mediumseagreen{
+    background-color:mediumseagreen;
+}
+h1.magenta{
+    color:magenta;
+}
+h1.yellow{
+    color:yellow;
+}
+h1.brown{
+    color:brown;
+}

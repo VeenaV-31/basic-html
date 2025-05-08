@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        header {
+            width:100%;
+            height:100px;
+            background-color: #d8d4bc;
+            color: #4bb3e0;
+            text-align: center;
+            line-height: 50px;
+            margin-bottom: 10px;
+
+        }
+        nav {
+            width:100%;
+            height:40px;
+            background-color: #7d6410;
+            color: #9a7619;
+            padding: 10px;
+            text-align: center;  
+            margin-bottom: 10px;          
+
+        }
+        nav a{
+            color:#fff;
+            text-decoration: none;
+            margin-right: 23px;
+        }
+        main{
+            height: 1000px;
+            line-height: 50px;
+            width: 100%;
+            padding: 20px;
+            text-align:left;
+            background-color: rgb(219, 235, 235);
+            margin-bottom: 10px;
+            
+        }
+        footer{
+            margin:0% auto;
+            background-color:rgb(110, 90, 14);
+            padding: 10px;
+            text-align: center;
+            color:#fff;
+        }
+    
+    </style>
+</head>
+<body> 
+    <!--header this is header-->
+    <header>
+        <h1>
+            Assyrian Heritage Registration
+        </h1>
+preserve our legacy. Join the cultural record
+         
+    </header>
+    <!-- navigation bar-->
+     <nav>
+        <a href="#"> Home</a>
+        <a href="#">Archieve</a>
+        <a href="#">Contact</a>
+     </nav>
+     <!--main-->
+     <main> <h1 style=" text-align: center;">Add your details</h1>
+        
+<form action="/submit" method="post" enctype="multipart/form-data" autocomplete="on" novalidate><br>
+
+    <label for="fullname;">Full Name:</label>
+    <input type="text" id="fullname" name="fullname" placeholder="Ashurbanipal" required maxlength="100" minlength="2" autofocus><br>
+  
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required autocomplete="email"><br>
+    <label for="address">Address:</label>
+    <input type="text" id="address" name="fullname" placeholder="your Address" required maxlength="100" minlength="2" autofocus><br>
+
+  
+    <label for="birthdate">Birth Date:</label>
+    <input type="date" id="birthdate" name="birthdate" required><br>
+    <label for="gender">Gender:</label>
+<select id="gender" name="gender" required>
+  <option value="">--Select--</option>
+  <option value="male">Male</option>
+  <option value="female">Female</option>
+  <option value="other">Other</option><br>
+</select>
+<br>
+<label for="desc">Tell us about your ancestry:</label>
+<textarea id="desc" name="desc" rows="4" maxlength="500"></textarea><br>
+
+  
+    <label for="photo">Upload Family Crest:</label>
+    <input type="file" id="photo" name="photo" accept="image/*"><br>
+  
+    <label for="password">Create Password:</label>
+    <input type="password" id="password" name="password" required minlength="6"><br>
+  
+    <label for="color">Favorite Traditional Color:</label>
+    <input type="color" id="color" name="color" value="#8b5e3c"><br>
+  
+    <label for="range">Cultural Knowledge (0–10):</label>
+    <input type="range" id="range" name="knowledge" min="0" max="10" value="5" step="1"><br>
+    <label for="fullname">Your Website</label>
+    <input type="text" id="fullname" name="fullname" placeholder="https://abcdefgh.com" required maxlength="100" minlength="2" autofocus><br>
+
+    <lable for="time">Best time to contact</lable>
+    <input type="time" id="time" name="time"><br>
+     
+  
+  
+    <label for="agree">Agree to share your data:</label>
+    <input type="checkbox" id="agree" name="agree" required><br>
+  
+    
+  
+</form>
+
+<label for="language">Preferred Language:</label>
+<input list="languages" id="language" name="language">
+<datalist id="languages">
+  <option value="Assyrian Neo-Aramaic">
+  <option value="Arabic">
+  <option value="English">
+    <option value="Kannada"></option>
+</datalist>
+
+<label for="submit">Submit:</label>
+<button type="submit" formaction="/custom-submit" formmethod="post">Submit</button><br>
+
+<label for="submit" style="text-align: center;">Submit form:</label>
+<button type="submit"  formaction="/custom-submit" formmethod="post" style= "background-color: #d8d4bc;">Okay                              </button><br>
+
+     </main></body>
+     <!-- footer-->
+      <footer>
+        <p> Assyrian cultural registry all rights reserved &copy;2024</p>
+      </footer>
+</body>
+</html>
